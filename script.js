@@ -30,19 +30,16 @@ function updateParticles() {
     let dy = mouse.y - p.y;
     let dist = Math.sqrt(dx * dx + dy * dy) || 1;
 
-    // Stronger pull strength for faster reaction
     let pullStrength = 0.06;
     p.vx += (dx / dist) * pullStrength;
     p.vy += (dy / dist) * pullStrength;
 
-    // Friction
     p.vx *= 0.85;
     p.vy *= 0.85;
 
     p.x += p.vx;
     p.y += p.vy;
 
-    // Bounce on edges
     if (p.x <= 0 || p.x >= canvas.width) p.vx *= -1;
     if (p.y <= 0 || p.y >= canvas.height) p.vy *= -1;
   }
