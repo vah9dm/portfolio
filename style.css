@@ -66,6 +66,7 @@ canvas {
 .delay-1 { animation-delay: 0.5s; }
 .delay-2 { animation-delay: 1s; }
 .delay-3 { animation-delay: 1.5s; }
+.delay-4 { animation-delay: 2s; }
 
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -81,4 +82,25 @@ canvas {
 .social-bar img:hover {
   transform: scale(1.2);
   box-shadow: 0 0 10px cyan;
+}
+
+/* Project Button Styling */
+.project-button {
+  margin-top: 1.5rem;
+}
+
+.project-button .download-btn {
+  font-size: 1rem;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  border: 2px solid cyan;
+  color: cyan;
+  background-color: transparent;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.project-button .download-btn:hover {
+  box-shadow: 0 0 15px cyan;
+  transform: scale(1.05);
 }
