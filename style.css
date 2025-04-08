@@ -67,6 +67,7 @@ canvas {
 .delay-2 { animation-delay: 1s; }
 .delay-3 { animation-delay: 1.5s; }
 .delay-4 { animation-delay: 2s; }
+.delay-5 { animation-delay: 2.5s; }
 
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
@@ -84,7 +85,6 @@ canvas {
   box-shadow: 0 0 10px cyan;
 }
 
-/* Project Button Styling */
 .project-button {
   margin-top: 1.5rem;
 }
